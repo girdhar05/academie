@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Academie</title>
+    <link
+      rel="shortcut icon"
+      href="/media/logo/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- <meta name="description" content="{$site_description}">
+	<meta name="keywords" content="{$site_keywords}"> -->
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/css/flaticon-set.css" rel="stylesheet" />
+    <link href="/css/themify-icons.css" rel="stylesheet" />
+    <link href="/css/magnific-popup.css" rel="stylesheet" />
+    <link href="/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="/css/animate.css" rel="stylesheet" />
+    <link href="/css/bootsnav.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/responsive.css" rel="stylesheet" />
+    <link href="/css/index.css" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link href="/util/css/home.css" rel="stylesheet" />
+  </head>
+
+  <body >
+    <%- include('./includes/header')%>
+       <!-- Start Banner 
+    ============================================= -->
+    <div class="banner-area transparent-nav content-top-heading text-normal">
+        <div id="bootcarousel" class="carousel slide animate_text carousel-fade" data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner text-light carousel-zoom">
+                <div class="item active">
+                    <div class="slider-thumb bg-fixed" style="background-image: url(/media/images/banner.jpg);"></div>
+                    <div class="box-table shadow dark">
+                        <div class="box-cell">
+                            <div class="container-align">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="content">
+                                            <h1 data-animation="animated slideInDown">India's Top Professional <span style='color:#ffbb19'> Job-Oriented Educational Partner</span></h1>
+                                            <p data-animation="animated slideInUp">
+                                               <ul class='a' style='color:#fff;font-size: 20px;font-weight: 800;'>
+                                                <li>Invest in leading partnership to aim higher profitability and growth oriented business opportunity.</li><br/>
+                                                <li>Education Sector in India will grow at 20 – 30% Annually 
+                                                <li  style='color:#ffbb19'>to create second largest graduate talent pipeline globally.</li>
+                                              </ul><br/> 
+                                            </p>
+                                        </div>
+                                    </div>
+									
+                                    <style>
+                                    .banner-area form input {
+                                      border: medium none;
+                                      -webkit-border-radius: 30px;
+                                      -moz-border-radius: 30px;
+                                      border-radius: 0px !important;
+                                      box-shadow: inherit;
+                                      min-height: 60px;
+                                      padding: 15px 30px;
+                                    }
+                                    </style>
+									
+									
+                                    <div class="col-md-6" style="padding-left:10vw;">
+                                         <div class="reg-form">
+                                            <div class="reg-box text-light">
+                                                <% if(successFlag === 'true') { %> 
+                                                    <div class="alert alert-success">We get your message, we will contact you soon...</div>
+                                                <% } else { %> 
+                                                <h4>
+                                                    Franchise Registration Form
+                                                </h4>
+                                                <% } %> 
+                                                <form id="Enquiry" action="/admin/franchiseLead" method="POST">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" placeholder="Full Name" name='name' type="text">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                <input class="form-control" placeholder="Email*" type="email" name='email'>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <input class="form-control" placeholder="Phone*" type="tel" name='phone'>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="form-group" >
+                                                                    <select name="investment" id="investment" class="form-control" style="height: 40px;">
+                                                                    <option value="">- Investment -</option>
+                                                                    <option value="2 - 3  Lakh">2 - 3  Lakh</option>                  
+                                                                    <option value="3 - 5 Lakh">3 - 5 Lakh</option>                    
+                                                                    </select>
+                                                                </div>
+                                                            </div> 
+                                                            <div class="col-md-12"  style=" padding-top:20px;">
+                                                                <div class="form-group">
+                                                                    <textarea name="message" id="message" class="demoInputBox form-control" cols="60" rows="2" placeholder="Message"   style=" padding-top:2rem;"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                            <input type="submit" name='franchiesebannersubmit' value="Send" class="btn btn-light border btn-md" style='background-color:#ffb606;'/>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+            <!-- End Wrapper for slides -->
+        </div>
+    </div>
+    <!-- End Banner -->
+  
+
+
+
+
+
+<!-- start of partner section -->
+<div class="our-featues-area about-area default-padding bg-dark" style="background-color:#002147;padding: 15.5px;">
+  <div class="container">
+      <div class="row">
+          <div class="search-course">
+              <div class="col-md-12">
+                  <div class="heading text-center text-light">
+                      <br><h2 style="font-size: 40px;">Partner With </h2>
+                  </div> 
+              </div>
+          </div>
+          <div class="our-features">
+              <div class="col-md-3 col-sm-3">
+                  <div class="item mariner"> 
+                      <div class="info">
+                            <center><img src="/media/img/googlepartner.jpg" class="img-responsive" style="border-radius: 5px;"></center>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+                  <div class="item java"> 
+                      <div class="info">
+                            <img src="/media/img/ISO.jpg" class="img-responsive" style="border-radius: 5px;">
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-3"  >
+                  <div class="item malachite" style="padding: 14%; background-color: white; border-radius: 5px;"> 
+                      <center><div class="info">
+                          <center>
+                              <h4 style="font-size: 18px;">
+                              <span style="color: #ffbb19;font-size: 48px;">14 +</span>
+                                <br>Companies</h4>
+                          </center> 
+                      </div></center>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-3" >
+                  <div class="item malachite" style="padding: 14%; background-color: white; border-radius: 5px;"> 
+                      <center><div class="info">
+                          <center>
+                              <h4 style="font-size: 18px;">
+                              <span style="color: #ffbb19;font-size: 48px;">3
+                              </span> 
+                                <br>Branches</h4>
+                            
+                          </center> 
+                      </div></center>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- End of partner Section -->
+
+<!-- Start of Why us -->
+<div id="courses" class="popular-courses default-padding without-carousel">
+  <div class="container">
+    <div class="row">
+        <div class="site-heading text-center">
+            <div class="col-md-8 col-md-offset-2">
+                <h2>Why Us</h2>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="popular-courses-items">
+
+        
+        <!-- Single Item -->
+        <div class="col-md-4 col-sm-6 equal-height" style="height: 637px;">
+          <div class="item">
+              <div class="thumb">
+                  <a href="#">
+                      <img src="/media/images/data science-franchise.png" alt="Thumb">
+                  </a>
+                  <div class="price"></div>
+              </div>
+          </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-md-4 col-sm-6 equal-height" style="height: 637px;">
+          <div class="item">
+              <div class="thumb">
+                  <a href="#">
+                    <img src="\media\images\data science-franchise.png" alt="Thumb">
+                  </a>
+                  <div class="price"></div>
+              </div>
+          </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-md-4 col-sm-6 equal-height" style="height: 637px;">
+          <div class="item">
+              <div class="thumb">
+                  <a href="#">
+                    <img src="\media\images\data science-franchise.png" alt="Thumb">
+                  </a>
+                  <div class="price"></div>
+              </div>
+          </div>
+        </div>
+        <!-- End Single Item -->
+        <!-- Single Item -->
+        <div class="col-md-4 col-sm-6 equal-height" style="height: 637px;">
+          <div class="item">
+              <div class="thumb">
+                  <a href="#">
+                    <img src="\media\images\data science-franchise.png" alt="Thumb">
+                  </a>
+                  <div class="price"></div>
+              </div>
+          </div>
+        </div>
+        <!-- End Single Item -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Why us -->
+
+<!-- Start of courses -->
+<div id="courses" class="popular-courses default-padding without-carousel">
+  <div class="container">
+      <div class="row">
+          <div class="site-heading text-center">
+              <div class="col-md-8 col-md-offset-2">
+                  <h2>Courses we Offer</h2>
+                  <p>
+                     
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="popular-courses-items">
+            <!-- single Item -->
+              
+              <!-- Single Item -->
+              <div class="col-md-4 col-sm-6 equal-height" style="height: 642px;  border-bottom:2px solid rgba(128, 128, 128, 0.377); margin-bottom: 30px;">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="travelManagement.html">
+                            <img src="/media/images/courses/tourism.jpg" alt="Thumb">
+                        </a>
+                        <div class="price"></div>
+                    </div>
+                    <div class="info">
+                        <h4 class="course-header-blue"><a href="travelManagement.html">Tour and Travel Management</a></h4>
+                        <p>
+                            <!-- Any Graduate, MBA-HR, Admin, BPO employees candidates who want to make their career in HR, Best option for females. -->
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <!-- Single Item -->
+              <div class="col-md-4 col-sm-6 equal-height" style="height: 642px;  border-bottom:2px solid rgba(128, 128, 128, 0.377); margin-bottom: 30px;">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="digitalMarketing.html">
+                            <img src="/media/images/courses/digital_marketing.jpg" alt="Thumb">
+                        </a>
+                        <div class="price"></div>
+                    </div>
+                    <div class="info">
+                        <h4 class="course-header-blue"><a href="digitalMarketing.html">Digital Marketing</a></h4>
+                        <p>
+                            <!-- Any Graduate, MBA-HR, Admin, BPO employees candidates who want to make their career in HR, Best option for females. -->
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <!-- Single Item -->
+              <div class="col-md-4 col-sm-6 equal-height" style="height: 642px;  border-bottom:2px solid rgba(128, 128, 128, 0.377); margin-bottom: 30px;">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="humanResource.html">
+                            <img src="/media/images/courses/human_resources.jpg" alt="Thumb">
+                        </a>
+                        <div class="price"></div>
+                    </div>
+                    <div class="info">
+                        <h4 class="course-header-blue"><a href="humanResource.html">Human Resource Management</a></h4>
+                        <p>
+                            <!-- Any Graduate, MBA-HR, Admin, BPO employees candidates who want to make their career in HR, Best option for females. -->
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <!-- Single Item -->
+              <div class="col-md-4 col-sm-6 equal-height" style="height: 642px;  border-bottom:2px solid rgba(128, 128, 128, 0.377) ;margin-bottom: 30px;">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="retailManagement.html">
+                            <img src="/media/images/courses/retail.jpg" alt="Thumb">
+                        </a>
+                        <div class="price"></div>
+                    </div>
+                    <div class="info">
+                        <h4 class="course-header-blue"><a href="retailManagement.html">Retail Management</a></h4>
+                        <p >
+                            <!-- Any Graduate, MBA-HR, Admin, BPO employees candidates who want to make their career in HR, Best option for females. -->
+                        </p>
+                    </div>
+                </div>
+              </div>
+              <!-- Single Item -->
+              <div class="col-md-4 col-sm-12 equal-height " style="height: 642px; border-bottom:2px solid rgba(128, 128, 128, 0.377); margin-bottom: 30px; ">
+                <div class="item">
+                    <div class="thumb">
+                        <a href="it.html">
+                            <img src="/media/images/courses/What_is_Information_Technology.webp" style="min-height:270px;"alt="Thumb">
+                        </a>
+                        <div class="price"></div>
+                    </div>
+                    <div class="info" >
+                        <h4 class="course-header-blue"><a href="it.html">Information Technology</a></h4>
+                        <p>
+                            <!-- Any Graduate, MBA-HR, Admin, BPO employees candidates who want to make their career in HR, Best option for females. -->
+                        </p>
+                    </div>
+                </div>
+              </div>
+            
+            <!-- End Single Item -->
+            
+
+              <!--<div class="col-md-12 button text-center">
+                  <a class="btn btn-dark effect circle btn-md" href="#">Browse All Courses</a>
+              </div>-->
+              
+          </div>
+      </div>
+  </div>
+</div>
+<!-- End of populor Courses -->
+
+<!-- Start Fun Factor 
+    ============================================= -->
+    <style>
+      .fun-fact .info .medium {
+  color: #ffffff;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+.col-md-offset-1 {
+  margin-left: 11.333333%;
+}
+.fun-fact{
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin:5px;
+}
+  </style>
+  <div class="fun-factor-area default-padding bottom-less text-center bg-fixed shadow dark-hard" style="background-image: url(/media/img/Homepage_Banner_4.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-3 col-sm-6 item">
+                <div class="fun-fact">
+                    <div class="icon">
+                        <i class="flaticon-contract"></i>
+                    </div>
+                    <div class="info"> 
+                        <span class="medium"> BEP within 4 candidates each</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 item">
+                <div class="fun-fact">
+                    <div class="icon">
+                        <i class="flaticon-professor"></i>
+                    </div>
+                    <div class="info"> 
+                        <span class="medium"> ROI within 3 months</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 item">
+                <div class="fun-fact">
+                    <div class="icon">
+                        <i class="flaticon-online"></i>
+                    </div>
+                    <div class="info"> 
+                        <span class="medium"> Investment – 3 TO 4  Lacs</span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    
+        
+        <div class="row">
+            <div class="col-md-offset-1 col-md-3 col-sm-6 item">
+                <div class="fun-fact">
+                    <div class="icon">
+                        <i class="flaticon-contract"></i>
+                    </div>
+                    <div class="info"> 
+                        <span class="medium"> Earnings : 80k to 1.50 lac per month</span><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 item">
+                <div class="fun-fact">
+                    <div class="icon">
+                        <i class="flaticon-professor"></i>
+                    </div>
+                    <div class="info"> 
+                        <span class="medium"> Trained 5900+ Candidates</span><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 item">
+                <div class="fun-fact">
+                    <div class="icon">
+                        <i class="flaticon-online"></i>
+                    </div>
+                    <div class="info"> 
+                        <span class="medium" style="font-size: 14px;"> Pune / Mumbai / Noida / Delhi / Nashik / Ahemdabad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+<!-- End Fun Factor -->
+
+<!-- Start Top Categories 
+    ============================================= -->
+    <div id="top-categories" class="top-cat-area bg-gray default-padding bottom-less">
+      <div class="container">
+          <div class="row">
+              <div class="site-heading text-center">
+                  <div class="col-md-8 col-md-offset-2">
+                      <h2>Partner With Us</h2>
+                      <p>
+                          Be a partner with for a highly demanding  professional training program to develop 
+                          highly skilled workforce required for the industry. We provide you a chance 
+                          to develop a new customer segment as you have an established business locally but
+                           do not have an exposure to global market.Be a partner with for a highly demanding  
+                           professional training program to develop highly skilled workforce required for 
+                           the industry. We provide you a chance to develop a new customer segment as you 
+                           have an established business locally but do not have an exposure to global market.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <style>
+            .top-cat-area .top-cat-items.inc-bg-color .item.mariner a::after {
+                background: #ffbb19 none repeat scroll 0 0;
+            }
+
+            .top-cat-area .top-cat-items.inc-bg-color .item.mariner a::after {
+              background: #ffffff none repeat scroll 0 0;
+              border: 2px solid #ffb606;
+              /* color: #000; */
+            } 
+            .top-cat-items .item h4 {
+              font-weight: 600;
+              margin-bottom: 10px;
+              color: #ffb606;
+              text-transform: capitalize;
+              transition: all 0.35s ease-in-out;
+              -webkit-transition: all 0.35s ease-in-out;
+              -moz-transition: all 0.35s ease-in-out;
+              -ms-transition: all 0.35s ease-in-out;
+              -o-transition: all 0.35s ease-in-out;
+            }
+            .top-cat-items.text-light .item span {
+              color: #002147;
+            }
+          </style>
+           
+      </div>
+  </div>
+  <!-- End Top Categories -->
+<!-- Start Testimonials 
+    ============================================= -->
+    <div class="testimonials-area carousel-shadow default-padding bg-dark text-light">
+      <div class="container">
+          <div class="row">
+              <div class="site-heading text-center">
+                  <div class="col-md-8 col-md-offset-2">
+                      <h2>Corporate Speaks</h2>
+                      <p>
+                          Our success is measured by the development of our students. They speak for us.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="clients-review-carousel owl-carousel owl-theme owl-loaded owl-drag">
+                      <!-- Single Item -->
+                      
+                      <!-- Single Item -->
+                      <!-- Single Item -->
+                      
+                      <!-- Single Item -->
+                      <!-- Single Item -->
+                      
+                      <!-- Single Item -->
+                      <!-- Single Item -->
+                      
+                      <!-- Single Item -->
+                  <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-750px, 0px, 0px); transition: all 0s ease 0s; width: 1500px;"><div class="owl-item" style="width: 345px; margin-right: 30px;"><div class="item">
+                          <div class="col-md-5 thumb">
+                              <img src="assets/img/team/ahutosh.jpg" alt="Thumb">
+                          </div>
+                          <div class="col-md-7 info">
+                              <p>
+                                  Great Process Oriented practical training for HR Management provided by Pace Career Academy.Training is provided by Industry Experts. “One of Best for HR people by Pace Career Academy, as they are themselves functioning as HRPO. 
+                              </p>
+                              <h4>Ashitosh Varadpande</h4>
+                              <span>Godrej Appliances</span>
+                          </div>
+                      </div></div><div class="owl-item" style="width: 345px; margin-right: 30px;"><div class="item">
+                          <div class="col-md-5 thumb">
+                              <img src="assets/img/team/Vinay.jpg" alt="Thumb">
+                          </div>
+                          <div class="col-md-7 info">
+                              <p>
+                                  Best Practical Oriented training in Digital Marketing  Domain. I have sourced many DM professionals form Pace Career Academy.The Fresher candidates who have pursued the DM training from Pace Career Academy, are very equivalent to experienced professionals for DM. 
+                              </p>
+                              <h4>Dr. Vinay P. Chandratre</h4>
+                              <span>Bajaj Auto Ltd.</span>
+                          </div>
+                      </div></div><div class="owl-item active" style="width: 345px; margin-right: 30px;"><div class="item">
+                          <div class="col-md-5 thumb">
+                              <img src="assets/img/team/kiran.jpg" alt="Thumb">
+                          </div>
+                          <div class="col-md-7 info">
+                              <p>
+                                  Pace Career Academy provide the perfect HR &amp; Digital Marketing training which is actually required by the industries. 
+                              </p>
+                              <h4>Mr. Kiran Suryavanshi</h4>
+                              <span>Lumax Technology Ltd.</span>
+                          </div>
+                      </div></div><div class="owl-item active" style="width: 345px; margin-right: 30px;"><div class="item">
+                          <div class="col-md-5 thumb">
+                              <img src="assets/img/team/Kuldip.jpg" alt="Thumb">
+                          </div>
+                          <div class="col-md-7 info">
+                              <p>
+                                  I would suggest that rather than opting MBA / PGDBM(HR) and getting the theoretical knowledge an individual should gain the practical knowledge from Pace Career Academy Team. 
+                              </p>
+                              <h4>Mr. Kuldip Charak</h4>
+                              <span>Navsahyadri Management Institute</span>
+                          </div>
+                      </div></div></div></div><div class="owl-nav"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next disabled"><i class="fa fa-angle-right"></i></div></div><div class="owl-dots disabled"></div></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- End Testimonials -->
+  
+  <!-- start of education logo campus -->
+  <div class="testimonials-area carousel-shadow default-padding bg-light text-light">
+    <div class="container">
+        <div class="row">
+            <div class="site-heading text-center">
+                <div class="col-md-12">
+                    <h2 style="color: #041250;">Our largest Education Campus</h2>
+                    <p style="color: #00020B;">We are here with the best of resources and quality educational services for your bright and successful careers.</p>
+                    <br><br>
+                    <img class="img-responsive" src="/media/img/trainingPartners.jpg" alt="Clients" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        
+         
+        
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- End of Educational logo campurs -->
+
+ 
+<!-- Start Partner with Us
+    ============================================= -->
+    <div id="top-categories" class="top-cat-area bg-gray default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="site-heading text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Partner Infrastucture requirement</h2>
+                        <ul >
+                            <li>	New Business or An Established Business Locally</li>
+                            <li>	Space: 500 to 1500 sq ft. (own or rented)</li>
+                            <li>	Team for business Promotion</li>
+                            <li>	Team for business Promotion</li>
+                            <li> 	Has good local presence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <style>
+              .top-cat-area .top-cat-items.inc-bg-color .item.mariner a::after {
+                  background: #ffbb19 none repeat scroll 0 0;
+              }
+  
+              .top-cat-area .top-cat-items.inc-bg-color .item.mariner a::after {
+                background: #ffffff none repeat scroll 0 0;
+                border: 2px solid #ffb606;
+                /* color: #000; */
+              } 
+              .top-cat-items .item h4 {
+                font-weight: 600;
+                margin-bottom: 10px;
+                color: #ffb606;
+                text-transform: capitalize;
+                transition: all 0.35s ease-in-out;
+                -webkit-transition: all 0.35s ease-in-out;
+                -moz-transition: all 0.35s ease-in-out;
+                -ms-transition: all 0.35s ease-in-out;
+                -o-transition: all 0.35s ease-in-out;
+              }
+              .top-cat-items.text-light .item span {
+                color: #002147;
+              }
+            </style>
+             
+        </div>
+    </div>
+    <!-- End Top Categories -->
+    
+<!-- Start became part
+    
+    ============================================= -->
+    <div id="top-categories" class="top-cat-area bg-gray default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="site-heading text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>
+                            Who Can Become a Partner
+                        </h2>
+                        <ul >
+                            <li>	Education Training Provider</li>
+                            <li>	Established Education institute</li>
+                            <li>	Business Establishment/startups</li>
+                            <li>	Thos who are passionate to enter a anew business-venture</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <style>
+              .top-cat-area .top-cat-items.inc-bg-color .item.mariner a::after {
+                  background: #ffbb19 none repeat scroll 0 0;
+              }
+  
+              .top-cat-area .top-cat-items.inc-bg-color .item.mariner a::after {
+                background: #ffffff none repeat scroll 0 0;
+                border: 2px solid #ffb606;
+                /* color: #000; */
+              } 
+              .top-cat-items .item h4 {
+                font-weight: 600;
+                margin-bottom: 10px;
+                color: #ffb606;
+                text-transform: capitalize;
+                transition: all 0.35s ease-in-out;
+                -webkit-transition: all 0.35s ease-in-out;
+                -moz-transition: all 0.35s ease-in-out;
+                -ms-transition: all 0.35s ease-in-out;
+                -o-transition: all 0.35s ease-in-out;
+              }
+              .top-cat-items.text-light .item span {
+                color: #002147;
+              }
+            </style>
+             
+        </div>
+    </div>
+    <!-- End Top Categories -->
+
+    <%- include('./includes/footer')%>
+
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/equal-height.min.js"></script>
+    <script src="/js/jquery.appear.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/modernizr.custom.13711.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/progress-bar.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/count-to.js"></script>
+    <script src="/js/YTPlayer.min.js"></script>
+    <script src="/js/loopcounter.js"></script>
+    <script src="/js/jquery.nice-select.min.js"></script>
+    <script src="/js/bootsnav.js"></script>
+    <script src="/js/main.js"></script>
+
+    <script src="/js/generated/ready.js"></script>
+    <script src="/js/generated/js_functions.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

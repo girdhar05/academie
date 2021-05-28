@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>All News</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="/admin/vendors/feather/feather.css" />
+    <link
+      rel="stylesheet"
+      href="/admin/vendors/ti-icons/css/themify-icons.css"
+    />
+    <link rel="stylesheet" href="/admin/vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/admin/css/vertical-layout-light/style.css" />
+    <!-- endinject -->
+    <link rel="shortcut icon" href="/favicon.ico" />
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_navbar.html -->
+      <%- include('./partials/navbar') %>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_settings-panel.html -->
+        <%- include('./partials/settingPannel') %>
+        <!-- partial -->
+        <!-- partial:../../partials/_sidebar.html -->
+        <%- include('./partials/sidebar') %>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <% if(allNews.length === 0) { %>
+              <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title">No News to Show...</div>
+                    <p class="card-description">Please Add some News</p>
+                  </div>
+                </div>
+              </div>
+              <% } %> <% allNews.forEach((news, index) => { %>
+              <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">News #<%= index + 1 %></h4>
+                    <p class="card-description">News Details</p>
+                    <div class="form-group row">
+                      <div class="col">
+                        <div class="alert alert-secondary text-dark">
+                          <b>Header:</b> <br />
+                          <%= news.header %>
+                        </div>
+                        <div class="alert alert-info">
+                          <b>Sub Header:</b> <br />
+                          <%= news.subHeader %>
+                        </div>
+                        <div class="alert alert-secondary text-dark">
+                          <b>Content:</b> <br />
+                          <%= news.content %>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div id="bloodhound">
+                          <img
+                            src="<%= news.imageUrl %>"
+                            class="w-100 rounded"
+                            alt="newsimage"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-title">
+                      <a href="/admin/updateNews/<%= news._id %>"
+                        ><button class="btn btn-success">Update News</button></a
+                      >
+                      <a href="/admin/deleteNews/<%= news._id %>"
+                        ><button class="btn btn-danger">Delete News</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <% }); %>
+            </div>
+          </div>
+
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <%- include('./partials/footer') %>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="/admin/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="/admin/js/off-canvas.js"></script>
+    <script src="/admin/js/hoverable-collapse.js"></script>
+    <script src="/admin/js/template.js"></script>
+    <script src="/admin/js/settings.js"></script>
+    <script src="/admin/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <!-- End custom js for this page-->
+    <script>
+      $('updateForm').submit(function (ev) {
+        ev.preventDefault();
+        //later you decide you want to submit
+        $(this).unbind('submit').submit();
+      });
+      // $(document).on('click', '#updateBtn', function (event) {
+      //   //alert('GO');
+      //   $(ClearFormBtn).Enabled = true;
+      // });
+    </script>
+  </body>
+</html>

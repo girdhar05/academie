@@ -1,0 +1,151 @@
+
+.iframe-size{
+   width: 100%;
+    min-height: 80%;
+}
+.iframe-size-form{
+  width: 100%;
+   min-height: 90%;
+}
+.collapse-header{
+  background-color:#002147;
+}
+.ul-class{
+    margin-left:20px;
+    list-style-type:disclosure-closed;
+    color:#002147;
+    font-size: 16 px;
+    font-weight:bold;
+}
+.container-align{
+  padding-left:10vw;
+  margin-right:10vw;
+}
+.animation:hover{
+  
+  
+  height: 100%;
+  width: 100%;
+  background: #ffb606;
+
+  transition: all 0.35s ease-in-out;
+  /* background: linear-gradient(to right, #ffb606 50% , blue 65%);
+  background-size: 100% 100%; */
+  
+}
+.course-header-blue{
+  color: #002147; 
+  margin-bottom: 15px;
+   font-weight: 600;
+    padding-top:16px; 
+}
+.animation{
+
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  padding: 8px 40px;
+  border: 2px solid #ffb606;
+  /* outline:5px solid rgba(0, 0, 0, 0.219); */
+  box-shadow: 0 0 3pt 2pt#ffcd5a;
+  color: #002147;
+  margin-top: 5px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -8px;
+  border-radius: 30px;
+  background-size:200% 100%;
+  background-position:left bottom ;
+}
+.button-shadow{
+  border:2px solid rgba(0, 0, 0, 0.144);
+}
+.background-color-accidental{
+ background-color: #b5e9f1df;
+}
+
+.form-label{
+  font-weight: bold;
+  color:black;
+  font-size: 1.5rem;
+  padding:0.5rem; 
+  text-transform: uppercase;
+  margin:0px;
+}
+.form-label-white{
+  font-weight: bold;
+  color:white;
+  font-size: 1.5rem;
+  padding:0.5rem; 
+  text-transform: uppercase;
+  margin:0px;
+}
+
+.p-3-rem{
+ padding: 3rem;
+}
+.p-6-rem{
+  padding:6rem;
+}
+.p-9-rem{
+  padding:9rem;
+}
+.text-white{
+  color:white;
+}
+.text-black{
+  color:black;
+}
+.text-yellow{
+
+  color: #ffb606
+}
+.text-blue{
+  color: #002147;
+}
+.button-hover:hover{
+  background-color:#ffcc53 ;
+  color:white !important; 
+}
+.hover-pointer{
+ cursor: pointer;
+}
+.input-file {
+  display: none;
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: red;
+}
+.background-white{
+  background-color: white;
+}
+.news-img{
+  min-height: 240px;
+}
+.banner-size{
+  min-height: 100%;
+}

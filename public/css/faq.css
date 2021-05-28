@@ -1,0 +1,29 @@
+html,body{
+    margin:0px;
+    padding:0px;
+}
+.faq{
+    margin: 2vh;
+    width: 50vw;
+    margin-left: 24vw;
+    margin-top: 10vh;
+}
+.accordion .fa{
+    margin-right: 0.5rem;
+}
+.title{
+    background:#002147;
+  
+}
+
+.que{
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    .faq {
+        width: 100vw;
+        margin-left: -4vw;
+    }
+    
+
+}

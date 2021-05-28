@@ -1,0 +1,15 @@
+.bg-video-container{
+    position:relative;
+}
+
+#bgVideoPoster {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   
+    z-index: -1;
+  }
+  .background-poster-size{
+      padding-top:300px;
+      padding-bottom:300px;
+  }

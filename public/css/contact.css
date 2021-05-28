@@ -1,0 +1,68 @@
+*{
+    margin: 0vw;
+    padding: 0vw;
+    box-sizing: border-box;
+}
+
+.contuct{
+   
+    width: 100vw;
+    height: 45vw;
+    padding-top: 5vw;
+    
+}
+
+.contuct-p{
+   
+    width: 35vw;
+    height: 33vw;
+    margin-left: 11vw;
+    float: left;
+}
+
+.contuct-h{
+      font-size: 2vw;
+      
+      width: 20vw;
+      text-align: center;
+      margin-left: 8vw;
+}
+  .contuct-text{
+    font-size: 1.2vw;
+    text-align: center;
+    width: 34vw;
+    padding-top: 2vw;
+  }
+
+  .contuct-msg{
+     font-size: 1.2vw;
+    padding-left:14vw;
+  }
+
+.fa{
+    margin-left: 16vw;
+    padding-top: 2vw;
+}
+.fam {
+    margin-left:17vw;
+}
+.contuct-mobile{
+    padding-left: 8vw;
+    font-size: 1.2vw;
+}
+
+.contuct-form{
+   
+   width: 35vw;
+    height: 33vw;
+    float: right;
+    margin-right: 6vw;
+    margin-top: 2vw;
+}
+
+label[for]{
+    font-size: 1.1vw;
+}
+.form-control{
+    font-size: 1.1vw;
+}

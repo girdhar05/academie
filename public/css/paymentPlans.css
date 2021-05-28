@@ -1,0 +1,23 @@
+.paymentplans{
+    border-bottom: 2px solid #ffb606
+
+}
+.paybody{
+    width: 24vw;
+    height: 60vh;
+    margin: 3px;
+    margin-left: 10vw;
+}
+.paymentdata-ultimited{
+    border: 1px solid #002147;
+    background: white;
+    border-radius: 20px;
+    margin-top: 1vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .paybody{
+        width: 100vw;
+    margin-left: -4vw;
+    }
+}

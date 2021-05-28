@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Academie</title>
+    <link
+      rel="shortcut icon"
+      href="/media/logo/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- <meta name="description" content="{$site_description}">
+	<meta name="keywords" content="{$site_keywords}"> -->
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/css/flaticon-set.css" rel="stylesheet" />
+    <link href="/css/themify-icons.css" rel="stylesheet" />
+    <link href="/css/magnific-popup.css" rel="stylesheet" />
+    <link href="/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="/css/animate.css" rel="stylesheet" />
+    <link href="/css/bootsnav.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/responsive.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link href="util/css/home.css" rel="stylesheet" />
+    <link href="/css/index.css" rel="stylesheet" />
+  </head>
+
+  <body class="background-color-accidental">
+    <%- include('./includes/header') %>
+
+    <div class="container-fluid">
+      <div class="row">
+        <h2 class="" style="color: black; text-align: center; padding: 5rem">
+          Let's get in touch
+        </h2>
+      </div>
+      <div
+        class="row"
+        style="padding-left: 5rem; padding-right: 5rem; padding-bottom: 5rem"
+      >
+        <div class="col-sm-6 text-center" style="padding-right: 3rem">
+          <div class="row">
+            <div class="col-sm-12">
+              <div
+                style="
+                  color: black;
+                  font-weight: bold;
+                  font-size: 2rem;
+                  padding-bottom: 3rem;
+                "
+              >
+                Hey! We are located in Noida, India. Feel free to use the
+                contact form to reach out us or write us emails.
+              </div>
+            </div>
+
+            <div
+              class="col-sm-12"
+              style="color: black; font-weight: bold; padding: 6rem 0 3rem 0"
+            >
+              <a href="mailto:info@academie.in">
+                <i
+                  class="fa fa-envelope"
+                  style="font-size: 6vw; color: #002147"
+                >
+                </i>
+                <div>
+                  <p style="color: black; font-weight: bold">
+                    INFO@ACADEMIE.IN
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-12">
+              <a
+                href="tel:0120-68700550"
+                style="color: black; font-weight: bold"
+              >
+                <i
+                  class="fa fa-mobile"
+                  style="font-size: 6vw; color: #002147; padding-bottom: 16px"
+                ></i>
+                <div>
+                  <p style="color: black; font-weight: bold">0120-68700550</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <form method="GET" action="https://dash.intueri.io/api/weblead.php">
+            <input
+              type="hidden"
+              name="apikey"
+              value="4b64d1cf5d05bf7455275832509c058b"
+            />
+            <div class="form-group" style="font-weight: bold">
+              <label class="form-label" for="exampleInputName"
+                >Your Name
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Name"
+                name="leadName"
+                required
+              />
+              <label class="form-label" for="exampleInputEmail1"
+                >Your Number</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Email Id"
+                name="leadPhone"
+                required
+              />
+              <label class="form-label" for="exampleInputEmail1">
+                Your Email
+              </label>
+              <input
+                type="Email"
+                class="form-control"
+                placeholder="Enter Your Email Id"
+                name="leadEmail"
+                required
+              />
+              <label class="form-label" for="exampleInputEmail1"
+                >Feedback Type</label
+              >
+              <select name="feedbackType" id="feedbackType">
+                <option value="courses">Courses</option>
+                <option value="fees">Fees</option>
+                <option value="classes">Classes</option>
+                <option value="accreditation">Accreditation</option>
+                <option value="internship">Internship</option>
+                <option value="placement">Placement</option>
+                <option value="payment">Payment</option>
+              </select>
+
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Write Your Feedback"
+                name="feedbackMessage"
+                id="feedbackMessage"
+                style="margin-top: 5vw"
+              ></textarea>
+
+              <input
+                class="btn btn-primary form-control"
+                type="submit"
+                value="Submit"
+                style="margin-top: 3rem"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./includes/footer') %>
+
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/equal-height.min.js"></script>
+    <script src="/js/jquery.appear.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/modernizr.custom.13711.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/progress-bar.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/count-to.js"></script>
+    <script src="/js/YTPlayer.min.js"></script>
+    <script src="/js/loopcounter.js"></script>
+    <script src="/js/jquery.nice-select.min.js"></script>
+    <script src="/js/bootsnav.js"></script>
+    <script src="/js/main.js"></script>
+
+    <script src="/js/generated/ready.js"></script>
+    <script src="/js/generated/js_functions.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

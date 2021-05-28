@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Academie</title>
+    <link
+      rel="shortcut icon"
+      href="/media/logo/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- <meta name="description" content="{$site_description}">
+	<meta name="keywords" content="{$site_keywords}"> -->
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/css/flaticon-set.css" rel="stylesheet" />
+    <link href="/css/themify-icons.css" rel="stylesheet" />
+    <link href="/css/magnific-popup.css" rel="stylesheet" />
+    <link href="/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="/css/animate.css" rel="stylesheet" />
+    <link href="/css/bootsnav.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/responsive.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link href="/util/css/home.css" rel="stylesheet" />
+    <link href="/css/index.css" rel="stylesheet" />
+  </head>
+
+  <body class="background-color-accidental">
+    <%- include('./includes/header')%>
+
+    <div class="container-fluid p-9-rem">
+      <div class="acrediation">
+        <div class="row">
+          <h1 class="text-center text-black" style="text-transform: uppercase">
+            FACULTY
+          </h1>
+        </div>
+        <div
+          class="row"
+          style="
+            padding-left: 6rem;
+            padding-right: 6rem;
+            font-size: 1.5rem background-color-acccidental;
+          "
+        >
+          <p class="content">
+            Academie is facilitated with top-notch business professionals,
+            experienced from diverse industries. Our full-time & guest faculties
+            are engrossed with trending market knowledge; each specialized in
+            their own domain. Faculty members abide by the institution’s
+            commitment of delivering professional & practical learning on
+            regular basis throughout the academic year. The team of faculty has
+            been formulated, strongly considering the aspects of talent &
+            ambition essential to preach new innovation, technology & ethics
+            prevailing in the real work-life.
+          </p>
+          <p class="content">
+            Our faculty members lay the foundation of education in order to
+            empower established career for both beginners and experienced work
+            professionals. A dynamic & pro-active approach infused with hi-tech
+            virtual classroom learning program is exercised by our trained
+            faculty members. They are proficiently engaged in mentorship,
+            workshops and training, industrial visits, clinical activities and
+            individual career counseling programs. Since their association with
+            the corporate world has furnished relevant exposure in their field
+            of expertise; students tend to gain abundantly.
+          </p>
+          <p class="content">
+            Simultaneously, Academie functions in collaboration with leading
+            professionals who enact as our Guest Lecturers. This enables a
+            part-time association with our institute and imparting scheduled
+            lectures to students on pre-decided topics. They are equally
+            responsible for career advisory, guidance, comprehensive evaluation
+            and learning assessments. While being employed in the industry,
+            their day-to-day operations & technical know-how on practical events
+            provide embarking mastery in the subject.
+          </p>
+        </div>
+        <div class="form-accrediation" style="padding-top: 0rem">
+          <form action="/admin/facultyLead" method="POST">
+            <div class="row">
+              <div class="row form-group text-center" style="padding-top: 1rem">
+                <% if(successFlag === 'true') { %>
+
+                <div
+                  class="alert alert-success alert-dismissible"
+                  style="
+                    text-align: center;
+                    color: white;
+                    font-size: 1.2em;
+                    background-color: #8bc34a;
+                  "
+                >
+                  <a
+                    href="#"
+                    class="close"
+                    data-dismiss="alert"
+                    aria-label="close"
+                    style="color: black"
+                    >&times;</a
+                  >
+                  <strong>Success!</strong> We get your query. We will contact
+                  you soon...
+                </div>
+
+                <% } %>
+                <h2>Career</h2>
+                <h4>We are hiring!</h4>
+                <p class="content">
+                  Academie possess expedite career opportunities for leading
+                  industry specialists. We are inviting professionals from all
+                  industries and disciplines to join our Faculty Member team.
+                  The faculties will handle teaching assignments with
+                  professional competence.
+                </p>
+                <p class="content">
+                  So, intellectual mind sets who wish to service the education
+                  sector are expected to fill in the below form, submit resumes
+                  and get an update on the vacancies.
+                </p>
+              </div>
+
+              <hr
+                class="p-3-rem"
+                style="
+                  margin-top: 3rem;
+                  border-top: 3px solid rgba(255, 255, 255, 0.726);
+                "
+              />
+              <div class="row">
+                <div class="col-sm-4 col-sm-offset-4 text-center">
+                  <a
+                    class="animation"
+                    data-toggle="collapse"
+                    data-target="#news3"
+                    style="width: 100%"
+                  >
+                    <div class="meta hover-pointer text-center" s>
+                      Join Faculty Member Team
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="row text-center content collapse"
+                id="news3"
+                style="margin-left: 6rem; margin-right: 6rem; margin-top: 3rem"
+              >
+                <hr
+                  class="p-3-rem"
+                  style="
+                    margin-top: 3rem;
+                    border-top: 3px solid rgba(255, 255, 255, 0.726);
+                  "
+                />
+
+                <div class="col-sm-6 form-group text-white">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input
+                    required
+                    id="name"
+                    placeholder="Enter Your Name"
+                    type="text"
+                    name="name"
+                    class="form-control form-input-decoration"
+                  />
+                </div>
+                <div class="col-sm-6 form-group">
+                  <label for="phone" class="form-label">Mobile Number</label>
+                  <input
+                    required
+                    id="phone"
+                    placeholder="Enter Your Mobile Number"
+                    type="text"
+                    name="phone"
+                    class="form-control form-input-decoration"
+                  />
+                </div>
+                <div class="col-sm-6 form-group">
+                  <label for="Email" class="form-label">Email ID</label>
+                  <input
+                    required
+                    id="currentProfession"
+                    placeholder=" Enter Your Email ID"
+                    type="email"
+                    name="email"
+                    class="form-control form-input-decoration"
+                  />
+                </div>
+                <div class="col-sm-6 form-group">
+                  <label for="occupation" class="form-label"
+                    >Select Your Occupation</label
+                  >
+
+                  <select
+                    required
+                    style="margin-bottom: 0px"
+                    class=""
+                    id="occupation"
+                    name="occupationType"
+                    aria-placeholder="Occupation"
+                  >
+                    <option value="business" selected>Business</option>
+                    <option value="employed">Working</option>
+                    <option value="retired">Retired</option>
+                    <option value="unEmployed">Non-Working</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <label for="highestQualification" class="form-label"
+                    >Your Highest Qualification</label
+                  >
+
+                  <select
+                    required
+                    class=""
+                    id="highestQualification"
+                    name="highestQualification"
+                  >
+                    <option value="matriculation" selected>
+                      Matriculation
+                    </option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="graduate">Graduate</option>
+                    <option value="postGraduate">Post Graduate</option>
+                    <option value="doctorate">Doctorate</option>
+                  </select>
+                </div>
+
+                <div class="col-sm-6 form-group">
+                  <label for="expreienceInYear" class="form-label"
+                    >Experience In Year</label
+                  >
+                  <input
+                    required
+                    id="expreienceInYear"
+                    name="expreienceInYear"
+                    placeholder="Enter Your Experience in Year"
+                    type="number"
+                    class="form-control form-input-decoration"
+                  />
+                </div>
+                <div class="col-sm-12 form-group">
+                  <!-- <label for="formFileLg" class="form-label "> Upload Your Resume</label><br> -->
+                  <lable class="form-label"> Please Upload letest Resume</lable>
+                  <label
+                    for="formFileLg"
+                    class="form-label"
+                    style="
+                      width: 100%;
+                      border: 0.5px solid rgba(0, 0, 0, 0.287);
+                      background-color: white;
+                      border-radius: 3px;
+                      padding: 10px;
+                    "
+                  >
+                    <div class="row">
+                      <div
+                        class="col-sm-4 text-left"
+                        style="
+                          font-size: 20px;
+                          color: #39d3ebdf;
+                          padding-right: 3vw;
+                          padding-left: 3vw;
+                        "
+                      >
+                        <i class="fa fa-upload"> </i>
+                      </div>
+                      <div class="col-sm-4" style="color: #39d3ebdf">
+                        Upload Your File
+                      </div>
+                      <div
+                        class="col-sm-4 text-right"
+                        style="
+                          font-size: 20px;
+                          color: #39d3ebdf;
+                          padding-right: 3vw;
+                          padding-left: 3vw;
+                        "
+                      >
+                        <i class="fa fa-file"></i>
+                      </div>
+                    </div>
+
+                    <input
+                      required
+                      class="form-control inputfile"
+                      placeholder="Upload Your Resume"
+                      id="formFileLg"
+                      name="resume"
+                      type="file"
+                    />
+                  </label>
+                </div>
+
+                <div
+                  class="col-sm-12 text-center form-group"
+                  style="padding-top: 3rem"
+                >
+                  <input
+                    class="btn-primary form-control button-shadow"
+                    type="submit"
+                    value="SUBMIT"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row" style="margin-left: 6rem; margin-right:6rem;">
+                    <div class="col-sm-12 text-center form-group " style="padding:0; padding-top:3rem;">
+                        <input class="btn-primary form-control" type="submit" value="SUBMIT">
+                    </div>
+                </div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./includes/footer')%>
+
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/equal-height.min.js"></script>
+    <script src="/js/jquery.appear.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/modernizr.custom.13711.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/progress-bar.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/count-to.js"></script>
+    <script src="/js/YTPlayer.min.js"></script>
+    <script src="/js/loopcounter.js"></script>
+    <script src="/js/jquery.nice-select.min.js"></script>
+    <script src="/js/bootsnav.js"></script>
+    <script src="/js/main.js"></script>
+
+    <script src="/js/generated/ready.js"></script>
+    <script src="/js/generated/js_functions.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

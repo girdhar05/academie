@@ -1,0 +1,59 @@
+.Internship-panel {
+  margin-top: -109px;
+  margin-left: 10vw;
+  margin-bottom: 45px;
+  width: 80vw;
+  border: 1px solid #002147;
+}
+.panel-heading-Internship-header {
+  padding-top: 16px;
+  padding-bottom: 1px;
+  background-color: #002147;
+  color: white;
+}
+.Internship-panel h3 {
+  text-align-last: center;
+  color: white;
+}
+.p-6-vw {
+  padding: 6vw;
+  color: yellow;
+}
+/* .Internship-Benefits-list{
+    border:1px solid rgba(0, 0, 0, 0.243);
+    outline: 2px solid rgba(0, 0, 0, 0.1511);
+    width: 50vw;
+    margin-left: 15vw;
+  
+} */
+.benifits-list {
+  font-size: medium;
+  font-family: 'Poppins';
+  font-weight: 500;
+  width: 54vw;
+  margin-left: 12vw;
+  padding-top: 2vw;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.243);
+  outline: 2px solid rgba(0, 0, 0, 0.1511);
+}
+.Internship-Benefits-list h3 {
+  text-align: center;
+}
+.ul-class {
+  margin-top: -1vh;
+  list-style-type: disclosure-closed;
+  margin-left: 4vw;
+  margin-bottom: 4vh;
+  padding-bottom: 0vh;
+}
+
+li::marker {
+  color: #002147;
+  size: 16px;
+}
+
+.ul-class li {
+  color: #002147;
+  padding: 10px;
+}
